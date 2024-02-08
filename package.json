@@ -1,0 +1,30 @@
+{
+  "name": "ikanime-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --respawn --clear src/app.ts -t full",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/yargs": "^17.0.32",
+    "prisma": "^5.9.1",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "dotenv": "^16.4.1",
+    "env-var": "^7.4.1",
+    "puppeteer": "^21.10.0",
+    "yargs": "^17.7.2"
+  }
+}
