@@ -1,0 +1,1 @@
+export * from './anime-type-converter.inf-adapter'
